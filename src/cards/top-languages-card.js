@@ -80,7 +80,6 @@ const createProgressTextNode = ({ width, color, name, progress, index }) => {
  * @returns {string} Compact layout programming language SVG node.
  */
 const createCompactLangNode = ({ lang, totalSize, index }) => {
-  const percentage = ((lang.size / totalSize) * 100).toFixed(2);
   const staggerDelay = (index + 3) * 150;
   const color = lang.color || "#858585";
 
@@ -88,7 +87,7 @@ const createCompactLangNode = ({ lang, totalSize, index }) => {
     <g class="stagger" style="animation-delay: ${staggerDelay}ms">
       <circle cx="5" cy="6" r="5" fill="${color}" />
       <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        ${lang.name} ${percentage}%
+        ${lang.name} ${lang.size} Bytes
       </text>
     </g>
   `;
