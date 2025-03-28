@@ -540,7 +540,7 @@ describe("Test renderTopLanguages", () => {
     );
 
     expect(queryAllByTestId(document.body, "lang-name")[0]).toHaveTextContent(
-      "HTML 40.00%",
+      "HTML 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-progress")[0]).toHaveAttribute(
       "width",
@@ -548,7 +548,7 @@ describe("Test renderTopLanguages", () => {
     );
 
     expect(queryAllByTestId(document.body, "lang-name")[1]).toHaveTextContent(
-      "javascript 40.00%",
+      "javascript 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-progress")[1]).toHaveAttribute(
       "width",
@@ -556,7 +556,7 @@ describe("Test renderTopLanguages", () => {
     );
 
     expect(queryAllByTestId(document.body, "lang-name")[2]).toHaveTextContent(
-      "css 20.00%",
+      "css 0.10 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-progress")[2]).toHaveAttribute(
       "width",
@@ -572,7 +572,7 @@ describe("Test renderTopLanguages", () => {
     );
 
     expect(queryAllByTestId(document.body, "lang-name")[0]).toHaveTextContent(
-      "HTML 40.00%",
+      "HTML 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[0]).toHaveAttribute(
       "size",
@@ -590,7 +590,7 @@ describe("Test renderTopLanguages", () => {
     expect(HTMLLangPercent).toBeCloseTo(40);
 
     expect(queryAllByTestId(document.body, "lang-name")[1]).toHaveTextContent(
-      "javascript 40.00%",
+      "javascript 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[1]).toHaveAttribute(
       "size",
@@ -604,7 +604,7 @@ describe("Test renderTopLanguages", () => {
     expect(javascriptLangPercent).toBeCloseTo(40);
 
     expect(queryAllByTestId(document.body, "lang-name")[2]).toHaveTextContent(
-      "css 20.00%",
+      "css 0.10 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[2]).toHaveAttribute(
       "size",
@@ -625,7 +625,7 @@ describe("Test renderTopLanguages", () => {
       { layout: "donut" },
     );
     expect(queryAllByTestId(document.body, "lang-name")[0]).toHaveTextContent(
-      "HTML 100.00%",
+      "HTML 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[0]).toHaveAttribute(
       "size",
@@ -647,7 +647,7 @@ describe("Test renderTopLanguages", () => {
     );
 
     expect(queryAllByTestId(document.body, "lang-name")[0]).toHaveTextContent(
-      "HTML 40.00%",
+      "HTML 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[0]).toHaveAttribute(
       "size",
@@ -671,7 +671,7 @@ describe("Test renderTopLanguages", () => {
     expect(HTMLLangPercent).toBeCloseTo(40);
 
     expect(queryAllByTestId(document.body, "lang-name")[1]).toHaveTextContent(
-      "javascript 40.00%",
+      "javascript 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[1]).toHaveAttribute(
       "size",
@@ -689,7 +689,7 @@ describe("Test renderTopLanguages", () => {
     expect(javascriptLangPercent).toBeCloseTo(40);
 
     expect(queryAllByTestId(document.body, "lang-name")[2]).toHaveTextContent(
-      "css 20.00%",
+      "css 0.10 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[2]).toHaveAttribute(
       "size",
@@ -713,7 +713,7 @@ describe("Test renderTopLanguages", () => {
       { layout: "donut-vertical" },
     );
     expect(queryAllByTestId(document.body, "lang-name")[0]).toHaveTextContent(
-      "HTML 100.00%",
+      "HTML 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-donut")[0]).toHaveAttribute(
       "size",
@@ -742,7 +742,7 @@ describe("Test renderTopLanguages", () => {
     );
 
     expect(queryAllByTestId(document.body, "lang-name")[0]).toHaveTextContent(
-      "HTML 40.00%",
+      "HTML 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-pie")[0]).toHaveAttribute(
       "size",
@@ -761,7 +761,7 @@ describe("Test renderTopLanguages", () => {
     expect(HTMLLangPercent).toBeCloseTo(40);
 
     expect(queryAllByTestId(document.body, "lang-name")[1]).toHaveTextContent(
-      "javascript 40.00%",
+      "javascript 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-pie")[1]).toHaveAttribute(
       "size",
@@ -775,7 +775,7 @@ describe("Test renderTopLanguages", () => {
     expect(javascriptLangPercent).toBeCloseTo(40);
 
     expect(queryAllByTestId(document.body, "lang-name")[2]).toHaveTextContent(
-      "css 20.00%",
+      "css 0.10 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-pie")[2]).toHaveAttribute(
       "size",
@@ -796,7 +796,7 @@ describe("Test renderTopLanguages", () => {
       { layout: "pie" },
     );
     expect(queryAllByTestId(document.body, "lang-name")[0]).toHaveTextContent(
-      "HTML 100.00%",
+      "HTML 0.20 KiB",
     );
     expect(queryAllByTestId(document.body, "lang-pie")[0]).toHaveAttribute(
       "size",
